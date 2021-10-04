@@ -1,0 +1,46 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --yangColor: #d8c21e;
+  --yinColor: #111111;
+  --shadow: rgba(0, 0, 0, .3);
+  --color1: #fd084c;
+  --color2: #fe9800;
+  --color3: #fff020;
+  --color4: #3edf4b;
+  --color5: #3363ff;
+  --color6: #b102b7;
+}
+
+body {
+  font-family: 'Gemunu Libre', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yinColor);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden auto;
+}
+
+h1 {
+  font-size: 12vmin;
+  color: var(--yinColor);
+  letter-spacing: .2em;
+  background: linear-gradient(
+    to right,
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4),
+    var(--color5),
+    var(--color6),
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: .1em transparent;
+}
