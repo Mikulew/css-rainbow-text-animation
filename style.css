@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,13 +9,7 @@
 :root {
   --yangColor: #d8c21e;
   --yinColor: #111111;
-  --shadow: rgba(0, 0, 0, .3);
-  --color1: #fd084c;
-  --color2: #fe9800;
-  --color3: #fff020;
-  --color4: #3edf4b;
-  --color5: #3363ff;
-  --color6: #b102b7;
+  --shadow: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -30,35 +26,20 @@ body {
 h1 {
   font-size: 12vmin;
   font-weight: 700;
-  color: transparent; 
-  letter-spacing: .2em;
+  color: transparent;
+  letter-spacing: 0.2em;
   text-align: center;
-  /*
-  I don't know why using var does not display properly on the screen
   background: linear-gradient(
-    var(--color1) 16.7%,
-    var(--color2) 16.7%,
-    var(--color2) 33.4%,
-    var(--color3) 33.4%,
-    var(--color3) 50.1%,
-    var(--color4) 50.1%,
-    var(--color4) 66.8%,
-    var(--color5) 66.8%,
-    var(--color5) 83.5%,
-    var(--color6) 83.5%,
-  );
-  */
-  background: linear-gradient(
-      #fd004c 16.7%,
-      #fe9000 16.7%,
-      #fe9000 33.4%,
-      #fff020 33.4%,
-      #fff020 50.1%,
-      #3edf4b 50.1%,
-      #3edf4b 66.8%,
-      #3363ff 66.8%,
-      #3363ff 83.5%,
-      #b102b7 83.5%
+    #fd004c 16.7%,
+    #fe9000 16.7%,
+    #fe9000 33.4%,
+    #fff020 33.4%,
+    #fff020 50.1%,
+    #3edf4b 50.1%,
+    #3edf4b 66.8%,
+    #3363ff 66.8%,
+    #3363ff 83.5%,
+    #b102b7 83.5%
   );
   -webkit-text-stroke: 2px var(--yangColor);
   background-clip: text;
@@ -67,8 +48,8 @@ h1 {
   animation: rainbow 100s linear infinite;
 }
 
-@keyframes rainbow{
-  100%{
-      background-position: 0 60em;
+@keyframes rainbow {
+  100% {
+    background-position: 0 60em;
   }
 }
